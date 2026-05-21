@@ -5,7 +5,7 @@ cd backend && mvn spring-boot:run &
 BACKEND_PID=$!
 
 echo "Iniciando frontend..."
-cd ../frontend && npm start &
+cd frontend && npm start &
 FRONTEND_PID=$!
 
 echo "Backend PID: $BACKEND_PID | Frontend PID: $FRONTEND_PID"

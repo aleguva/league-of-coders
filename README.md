@@ -30,7 +30,7 @@ mvn spring-boot:run
 
 ## Equipo
 
-- Jaime - Frontend Angular
+- Jaime Hernandez Garcia - Frontend Angular
 - David Herrera Arjona - HTML/CSS
 - Carlos Prada Escortell - Backend
 - Alejandro Guzmán Vásquez - Backend

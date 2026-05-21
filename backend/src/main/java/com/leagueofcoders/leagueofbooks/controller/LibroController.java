@@ -1,9 +1,9 @@
 package com.leagueofcoders.leagueofbooks.controller;
 
-import com.nttdata.backend.model.Autor;
-import com.nttdata.backend.model.Libro;
-import com.nttdata.backend.service.AutorService;
-import com.nttdata.backend.service.LibroService;
+import com.model.Autor;
+import com.model.Libro;
+import com.leagueofcoders.leagueofbooks.service.AutorService;
+import com.leagueofcoders.leagueofbooks.service.LibroService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

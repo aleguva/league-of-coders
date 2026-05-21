@@ -1,7 +1,7 @@
 package com.leagueofcoders.leagueofbooks.service;
 
-import com.nttdata.backend.model.Autor;
-import com.nttdata.backend.repository.AutorRepository;
+import com.model.Autor;
+import com.repository.AutorRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

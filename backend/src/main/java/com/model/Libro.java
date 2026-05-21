@@ -12,7 +12,7 @@ public class Libro {
  private int anio;
  private String sinopsis;
  private String fechaSalida;
- private int numeroPaginas;
+ private Integer numeroPaginas;
  private String genero;
  @ManyToOne
  @JoinColumn(name = "autor_id")
@@ -28,8 +28,8 @@ public class Libro {
  public void setSinopsis(String sinopsis) { this.sinopsis = sinopsis; }
  public String getFechaSalida() { return fechaSalida; }
  public void setFechaSalida(String f) { this.fechaSalida = f; }
- public int getNumeroPaginas() { return numeroPaginas; }
- public void setNumeroPaginas(int n) { this.numeroPaginas = n; }
+ public Integer getNumeroPaginas() { return numeroPaginas; }
+ public void setNumeroPaginas(Integer n) { this.numeroPaginas = n; }
  public String getGenero() { return genero; }
  public void setGenero(String genero) { this.genero = genero; }
  public Autor getAutor() { return autor; }

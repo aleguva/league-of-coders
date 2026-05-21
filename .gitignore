@@ -35,3 +35,6 @@ frontend/.angular/
 
 # Maven
 backend/target/
+# Claude Code
+CLAUDE.md
+.claude/

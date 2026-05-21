@@ -1,1 +1,20 @@
-<p>autor-list works!</p>
+<div class="page-header">
+  <h1>Autores</h1>
+  <a routerLink="/autores/nuevo" class="btn-primary">+ Nuevo autor</a>
+</div>
+
+<div class="author-grid">
+  @for (autor of autores(); track autor.id) {
+    <a [routerLink]="['/autores', autor.id]" class="author-card">
+      <div class="author-avatar">{{ autor.nombre[0] }}</div>
+      <div class="author-info">
+        <span class="author-name">{{ autor.nombre }}</span>
+        <span class="author-nationality">{{ autor.nacionalidad }}</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+  }
+  @empty {
+    <p class="empty">No hay autores registrados.</p>
+  }
+</div>

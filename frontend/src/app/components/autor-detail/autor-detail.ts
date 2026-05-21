@@ -9,17 +9,8 @@ import { Libro } from '../../models/libro.model';
   selector: 'app-autor-detail',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  template: `
-    <h2>{{ autor()?.nombre }}</h2>
-    <p>{{ autor()?.nacionalidad }}</p>
-    <h3>Libros</h3>
-    <ul>
-      @for (libro of libros(); track libro.id) {
-        <li>{{ libro.titulo }} ({{ libro.anio }})</li>
-      }
-    </ul>
-    <a routerLink="/autores">Volver</a>
-  `
+  templateUrl: './autor-detail.html',
+  styleUrl: './autor-detail.css'
 })
 export class AutorDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);

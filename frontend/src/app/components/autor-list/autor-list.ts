@@ -8,18 +8,8 @@ import { Autor } from '../../models/autor.model';
   selector: 'app-autor-list',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  template: `
-    <h2>Autores</h2>
-    <a routerLink="/autores/nuevo">+ Añadir autor</a>
-    <ul>
-      @for (autor of autores(); track autor.id) {
-        <li>
-          <a [routerLink]="['/autores', autor.id]">{{ autor.nombre }}</a>
-          — {{ autor.nacionalidad }}
-        </li>
-      }
-    </ul>
-  `
+  templateUrl: './autor-list.html',
+  styleUrl: './autor-list.css'
 })
 export class AutorListComponent implements OnInit {
   private autorService = inject(AutorService);

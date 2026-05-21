@@ -1,20 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { AutorService } from '../../services/autor';
 
 @Component({
   selector: 'app-autor-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
-  template: `
-    <h2>Nuevo Autor</h2>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <input formControlName="nombre" placeholder="Nombre" />
-      <input formControlName="nacionalidad" placeholder="Nacionalidad" />
-      <button type="submit" [disabled]="form.invalid">Guardar</button>
-    </form>
-  `
+  imports: [ReactiveFormsModule, RouterModule],
+  templateUrl: './autor-form.html',
+  styleUrl: './autor-form.css'
 })
 export class AutorFormComponent {
   private fb = inject(FormBuilder);

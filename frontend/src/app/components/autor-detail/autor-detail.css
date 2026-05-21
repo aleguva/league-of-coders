@@ -1,0 +1,114 @@
+.back-link {
+  margin-bottom: 1.5rem;
+}
+
+.back-link a {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+
+.back-link a:hover { color: var(--text); }
+
+.author-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.author-header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.nationality-tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.775rem;
+  font-weight: 500;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.section h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.9rem;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.book-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.book-title {
+  font-weight: 500;
+  font-size: 0.925rem;
+  color: var(--text);
+}
+
+.book-year {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--tag-bg);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.book-genre {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}

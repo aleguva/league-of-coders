@@ -1,1 +1,21 @@
-<p>autor-form works!</p>
+<div class="back-link">
+  <a routerLink="/autores">← Volver</a>
+</div>
+
+<div class="card">
+  <h1>Nuevo autor</h1>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="field">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" formControlName="nombre" placeholder="Ej. Gabriel García Márquez" />
+    </div>
+
+    <div class="field">
+      <label for="nacionalidad">Nacionalidad</label>
+      <input id="nacionalidad" formControlName="nacionalidad" placeholder="Ej. Colombiana" />
+    </div>
+
+    <button type="submit" class="btn-submit" [disabled]="form.invalid">Guardar autor</button>
+  </form>
+</div>

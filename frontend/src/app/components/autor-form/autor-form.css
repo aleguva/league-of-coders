@@ -1,0 +1,75 @@
+.back-link {
+  margin-bottom: 1.25rem;
+}
+
+.back-link a {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+
+.back-link a:hover { color: var(--text); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  max-width: 480px;
+}
+
+.card h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+  color: var(--text);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.field label {
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.field input {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.925rem;
+  color: var(--text);
+  background: var(--bg);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input:focus {
+  border-color: #94a3b8;
+  background: var(--surface);
+}
+
+.btn-submit {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.65rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.925rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-submit:hover:not(:disabled) { background: var(--accent-hover); }
+.btn-submit:disabled { opacity: 0.45; cursor: not-allowed; }
